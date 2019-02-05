@@ -19,6 +19,10 @@
 		E07E8D2F220961ED00115B07 /* DailyTaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07E8D2E220961ED00115B07 /* DailyTaskCollectionViewCell.xib */; };
 		E07E8D342209649F00115B07 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D332209649F00115B07 /* UIViewExtensions.swift */; };
 		E07E8D3622096DE500115B07 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D3522096DE500115B07 /* DayCollectionViewCell.swift */; };
+		E07E8D392209916F00115B07 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D382209916F00115B07 /* ShadowView.swift */; };
+		E07E8D3C2209CAFA00115B07 /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D3B2209CAFA00115B07 /* DateUtilities.swift */; };
+		E07E8D3E2209CEFD00115B07 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D3D2209CEFD00115B07 /* DateExtensions.swift */; };
+		E07E8D412209D16A00115B07 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E8D402209D16A00115B07 /* DayModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		E07E8D2E220961ED00115B07 /* DailyTaskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyTaskCollectionViewCell.xib; sourceTree = "<group>"; };
 		E07E8D332209649F00115B07 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		E07E8D3522096DE500115B07 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		E07E8D382209916F00115B07 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E07E8D3B2209CAFA00115B07 /* DateUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		E07E8D3D2209CEFD00115B07 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		E07E8D402209D16A00115B07 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		E07E8CF8220886A400115B07 /* Timesheet */ = {
 			isa = PBXGroup;
 			children = (
+				E07E8D3F2209D14300115B07 /* Models */,
 				E07E8D312209648700115B07 /* Helper */,
 				E07E8D30220961FD00115B07 /* Views */,
 				E07E8D2722095E9D00115B07 /* Controllers */,
@@ -159,6 +168,8 @@
 		E07E8D312209648700115B07 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E07E8D3A2209CAE500115B07 /* Utilities */,
+				E07E8D372209914F00115B07 /* Custom */,
 				E07E8D322209648F00115B07 /* Extensions */,
 			);
 			path = Helper;
@@ -168,8 +179,33 @@
 			isa = PBXGroup;
 			children = (
 				E07E8D332209649F00115B07 /* UIViewExtensions.swift */,
+				E07E8D3D2209CEFD00115B07 /* DateExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E07E8D372209914F00115B07 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E07E8D382209916F00115B07 /* ShadowView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E07E8D3A2209CAE500115B07 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E07E8D3B2209CAFA00115B07 /* DateUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E07E8D3F2209D14300115B07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E07E8D402209D16A00115B07 /* DayModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +340,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07E8D3C2209CAFA00115B07 /* DateUtilities.swift in Sources */,
 				E07E8D342209649F00115B07 /* UIViewExtensions.swift in Sources */,
 				E07E8D3622096DE500115B07 /* DayCollectionViewCell.swift in Sources */,
 				E07E8D2922095EE600115B07 /* TimeSheetViewController.swift in Sources */,
 				E07E8CFC220886A400115B07 /* ViewController.swift in Sources */,
+				E07E8D3E2209CEFD00115B07 /* DateExtensions.swift in Sources */,
+				E07E8D412209D16A00115B07 /* DayModel.swift in Sources */,
 				E07E8CFA220886A400115B07 /* AppDelegate.swift in Sources */,
 				E07E8D2D220961C800115B07 /* DailyTaskCollectionViewCell.swift in Sources */,
+				E07E8D392209916F00115B07 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 import UIKit
 
 class DayCollectionViewCell: UICollectionViewCell,UICollectionViewDataSource,UICollectionViewDelegate {
+    @IBOutlet weak var view: ShadowView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
